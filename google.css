@@ -1,0 +1,51 @@
+#PageContainer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "header header header header"
+        ". main main ."
+        "footer footer footer footer";
+    height: 100%;
+}
+.LeftSide{
+    display: flex;
+    flex-direction: row;
+    grid-area: header;
+}
+.RightSide{
+    display: flex;
+    flex-direction: row;
+    justify-self: end;
+    justify-content: flex-end;
+    grid-area: header;
+}
+/* div {
+    border: 4px solid red;
+} */
+#HeaderItem{
+    padding-right: 4px;
+}
+
+.SearchArea{
+    grid-area: main;
+    align-self: center;
+    justify-self: center;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.LeftSideFooter{
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    
+}
+.RightSideFooter{
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-self: end;
+    justify-content: flex-end;
+}
