@@ -54,3 +54,6 @@ html, body{
     align-self: center;
     padding-top: 15px;
 }
+.FooterItem{
+    padding-right: 8px;
+}
